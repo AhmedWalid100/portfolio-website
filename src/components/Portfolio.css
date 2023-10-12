@@ -1,0 +1,42 @@
+.portfolioContainer{
+    background-color: #222222;
+    padding:90px 10%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.portfolioContainer h2{
+    letter-spacing: 2px;
+}
+.portfolioContainer ul{
+    display:flex;
+    list-style: none;
+    gap:10px;
+    margin-top:40px;
+}
+.portfolioContainer ul li{
+    padding:5px 10px;
+    border:solid white 1px;
+    border-radius: 5px;
+}
+.activePort{
+    background-color: #FEBC38;
+    color:black;
+    border:solid #FEBC38 1px !important; 
+}
+.projects{
+    width:100%;
+    gap:20px;
+}
+.projects div{
+    width:30%;
+    height:300px;
+    background: blue;
+}
+.projects div img{
+    object-fit: cover;
+    width:100%;
+    
+}

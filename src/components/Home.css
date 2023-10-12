@@ -1,0 +1,45 @@
+.heroContainer{
+    height:100vh;
+    background:linear-gradient(rgba(1,1,1,0.4),rgba(1,1,1,0.3)),url('backgroundHero.jpg');
+    background-size: 190%;
+    background-position-y: 50%;
+    background-position-x: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.heroContainer p{
+    font-size:30px;
+    text-align: center;
+    letter-spacing: 1px;
+    color:#FAF9F6;
+    color: white;
+}
+.heroContainer h1{
+    font-size:90px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.heroContainer div{
+    padding-top:95px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .heroContainer div button{
+    background-color: #FEBC38;
+    margin-top:20px;
+    width:20%;
+    padding:10px 5px;
+    font-size: 18px;
+    border:none;
+    border-radius: 20px;
+    color:black;
+    font-weight:500;
+ }

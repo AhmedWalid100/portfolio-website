@@ -1,0 +1,24 @@
+.navContainer{
+    position:absolute;
+    top:0;
+    right: 0;
+    left:0;
+    background-color: transparent;
+}
+.navbarFlex{
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    list-style: none;
+    background-color: transparent;
+    letter-spacing: 3px;
+    flex-wrap: wrap;
+}
+
+.active{
+    border-bottom: solid 1px #FEBC38;
+    padding-bottom: 2px;
+    color: #FEBC38;
+}
