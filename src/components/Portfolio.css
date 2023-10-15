@@ -5,11 +5,25 @@
     align-items: center;
     flex-direction: column;
     gap:10px;
-    height:5000px;
+    border-bottom: solid 1px rgb(255, 255, 255,0.3);
 }
 
 .portfolioContainer h2{
     letter-spacing: 2px;
+}
+.portfolioContainer h2::after{
+    content:"";
+    border-bottom:15px solid #FEBC38 ;
+    border-right: 15px solid transparent;
+    display:inline-block;
+    margin-left: 10px;
+}
+.portfolioContainer h2::before{
+    content:"";
+    border-bottom:15px solid #FEBC38 ;
+    border-left: 15px solid transparent;
+    display:inline-block;
+    margin-right: 12px;
 }
 .portfolioContainer ul{
     display:flex;
@@ -38,8 +52,8 @@
 }
 .projects div{
     margin-top:20px;
-    width:49%;
-    height:300px;
+    width:48%;
+    
     box-shadow: -2px -1px 41px -11px rgba(255,255,255,0.1);
     background-color: transparent;
 }
