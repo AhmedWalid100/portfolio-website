@@ -5,8 +5,7 @@
     align-items: center;
     flex-direction: column;
     gap:10px;
-    height:2000px;
-    border-bottom: solid 1px white;
+    
     color:white;
 }
 .aboutContainer h2::after{
@@ -51,4 +50,14 @@
     padding: 15px 25px;
     border-radius: 10px;
     background-color:#353839;
+}
+.aboutSmallContainer button{
+    padding:10px 15px;
+    background-color:#FEBC38;
+    color:black;
+    font-weight: bold;
+    border:none;
+    width:30%;
+    border-radius: 5px;
+    margin-top: 25px;
 }

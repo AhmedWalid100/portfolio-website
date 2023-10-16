@@ -14,7 +14,8 @@ My skills in front-end development include HTML, CSS, JavaScript, React, Node.js
 However, my focus right now is on Front-End Development. The projects and skills I will be displaying on my website 
 will be focused towards Front-End Development.
 I'm passionate about creating beautiful, user-friendly web applications.
- I'm excited to use my skills and experience. Please feel free to contact me if you have any questions.</div>
+ I'm excited to use my skills and experience. Please feel free to contact me if you have any questions.
+ <button>CONTACT ME</button></div>
             <div><h3>My Skills</h3><div className='skills'><h5>HTML</h5>
 <h5>CSS</h5>
 <h5>JavaScript</h5>

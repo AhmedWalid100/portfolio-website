@@ -1,0 +1,27 @@
+.iconsContainer{
+    background-color: #353839;
+    min-height: 200px;
+    padding:40px 100px;
+    overflow:hidden;
+    white-space: nowrap;
+    display:flex;
+    align-items: center;
+}
+.iconSize{
+    font-size: 100px;
+    margin:0 40px; 
+}
+.iconsSlider{
+    display: inline-block;
+    white-space: nowrap;
+    animation:slide 15s infinite linear;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
