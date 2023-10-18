@@ -42,4 +42,11 @@
     border-radius: 20px;
     color:black;
     font-weight:500;
+    transition:0.5s;
+    cursor:pointer;
+ }
+ 
+ .heroContainer div button:hover{
+    background-color: #ffaa00;
+    transform: translateY(-5px);
  }

@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     gap:50px;
-    
+    border-bottom: solid 1px rgb(255, 255, 255,0.3);
     color:white;
 }
 .contactContainer h2::after{
@@ -38,16 +38,23 @@
 }
 .form button{
     background: #FEBC38;
+    border:none;
     width:20%;
     border-radius: 10px;
     padding:10px;
     color:#353839;
     font-weight: bold;
     margin:20px auto;
+    cursor:pointer;
+    transition:0.5s;
 }
 .form textarea{
     border:none;
     border-radius: 5px;
     height:100px;
     background: #353839;
+}
+.form button:hover{
+    background-color: #ffaa00;
+    transform: translateY(-5px);
 }

@@ -8,9 +8,11 @@ function Contact() {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm('service_1rbovkq', 'template_gj5hdin', form.current, '5UpJ21tkENwLjNtEC')
         .then((result) => {
             console.log(result.text);
+            e.target.reset();
+            alert('Email Sent! I will reply to you shortly. Thanks!')
         }, (error) => {
             console.log(error.text);
         });
@@ -21,11 +23,11 @@ function Contact() {
         <h2>CONTACT</h2>
       <form ref={form} className='form' onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="from_name" />
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="from_email" required/>
         <label>Message</label>
-        <textarea name="message" />
+        <textarea name="message" required />
         <button type="submit">Send</button>
       </form>
     </div>

@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio.js';
 import About from './components/About';
 import Icons from './components/Icons';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
     <About/>  
     <Icons/>
     <Contact/>
+    <Footer/>
     </>
   );
 }
