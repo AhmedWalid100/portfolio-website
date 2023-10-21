@@ -15,4 +15,8 @@
     margin-left: 8px;
     margin-right: 8px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.socialIcons:hover{
+    transform:rotate(360deg);
 }

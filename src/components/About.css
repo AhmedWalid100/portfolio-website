@@ -67,3 +67,46 @@
     background-color: #ffaa00;
     transform: translateY(-5px);
 }
+
+@media screen and (max-width:900px){
+    .aboutSmallContainer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        gap:20px;
+    }
+    .aboutSmallContainer{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        margin-top:50px;
+        flex-wrap: wrap;
+        gap:50px;
+    }
+    .aboutSmallContainer div p{
+    font-size: 15px;
+    text-align: center;
+    }
+    .aboutSmallContainer button{
+        padding:10px 15px;
+        background-color:#FEBC38;
+        color:black;
+        font-weight: bold;
+        border:none;
+        width:50%;
+        border-radius: 5px;
+        margin-top: 25px;
+        transition:0.5s;
+        cursor:pointer;
+    }
+    .aboutSmallContainer .skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:10px;
+        width:100%;
+        justify-content: center;
+        
+    }
+}

@@ -1,9 +1,13 @@
 import React from 'react'
 import './About.css'
 function About() {
+  const handleContactClick=()=>{
+      document.getElementById('contact').scrollIntoView({behavior:"smooth"})
+  }
   return (
 
-    <div className='aboutContainer'>
+
+    <div id='about' className='aboutContainer'>
         <h2>ABOUT ME</h2>
         <div className='aboutSmallContainer'>
             <div><h3>Get to know me!</h3><p>Hi, I'm Ahmed Walid, a front-end developer with 1 year of experience.
@@ -11,11 +15,11 @@ function About() {
 My skills in front-end development include HTML, CSS, JavaScript, React, Node.js, and WordPress.<br/></p>
 <p>I also know other languages, as I have knowledge in game development and other computer science fields like,
  computer networks, machine learning and data acquisition. (C#, Python, Java, C, MySQL) </p>
-However, my focus right now is on Front-End Development. The projects and skills I will be displaying on my website 
+<p>However, my focus right now is on Front-End Development. The projects and skills I will be displaying on my website 
 will be focused towards Front-End Development.
 I'm passionate about creating beautiful, user-friendly web applications.
- I'm excited to use my skills and experience. Please feel free to contact me if you have any questions.
- <button>CONTACT ME</button></div>
+ I'm excited to use my skills and experience. Please feel free to contact me if you have any questions.</p>
+ <button onClick={()=>handleContactClick()}>CONTACT ME</button></div>
             <div><h3>My Skills</h3><div className='skills'><h5>HTML</h5>
 <h5>CSS</h5>
 <h5>JavaScript</h5>

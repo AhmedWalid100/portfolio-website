@@ -1,9 +1,16 @@
 .navContainer{
-    position:absolute;
+    position:fixed;
     top:0;
     right: 0;
     left:0;
     background-color: transparent;
+    transition:0.5s;
+    z-index: 1;
+}
+.background{
+    background-color: #222222;
+    top:-20px;
+    height:80px;
 }
 .navbarFlex{
     height:100px;
@@ -16,10 +23,68 @@
     letter-spacing: 3px;
     flex-wrap: wrap;
 }
+.navbarFlex li{
+    cursor: pointer;
+}
 
-.active{
+.active li{
     border-bottom: solid 1px #FEBC38;
     padding-bottom: 2px;
     color: #FEBC38;
-    font-size:1rem;
+}
+
+.hamburger{
+    display:none;
+}
+
+
+@media screen and (max-width:500px){
+    .navContainer{
+        position:fixed;
+        width:80%;
+        z-index:2;
+
+    }
+    .navbarFlex{
+        display:flex;
+        padding:0px 0px;
+        overflow:hidden;
+        align-items: start;
+        flex-direction: column;
+        gap:50px;
+        height:0px;
+        background-color: #222222;
+        transition:0.25s;
+        flex-wrap: nowrap;
+        
+    }
+    .phoneActive{
+        display:flex;
+        padding:20px 20px;
+        flex-direction: column;
+        gap:50px;
+        height:110vh;
+        
+    }
+    .hamburger{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        width:100%;
+        display:flex;
+        justify-content: end;
+        align-items: center;
+        background: #222222;
+        padding:15px;
+        z-index:3;
+    }
+    .hamburgerSize{
+        font-size: 26px;
+    }
+    .background{
+        background-color: #222222;
+        top:-20px;
+        height:0px;
+    }
 }
