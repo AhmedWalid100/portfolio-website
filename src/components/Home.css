@@ -57,16 +57,16 @@
  @media screen and (max-width:999px){
     .heroContainer{
         padding-top:70px;
-        height:100vh;
-        background:linear-gradient(rgba(1,1,1,0.4),rgba(1,1,1,0.3)),url('backgroundHero.jpg');
+        height: 100vh;
+        background:linear-gradient(rgba(1,1,1,0.4),rgba(1,1,1,0.3)),url('backgroundHeroPhone.jpg');
         background-size: cover;
         background-position-y: 48%;
-        background-position-x: 52%;
+        background-position-x: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: unset;
     }
     .heroContainer p{
         font-size:20px;
